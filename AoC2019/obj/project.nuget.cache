@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "e7YzqRRHiPciO+gsrirb+D/IoIwryJLNBvoMMnzNOYwW6vc+4dPYVHwE64fCK3jpSWvMo2CRZSuB3kdppRgSpQ==",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\AoC2019\\AoC2019FSharp\\AoC2019\\AoC2019.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Karl\\.nuget\\packages\\fsharp.core\\6.0.5\\fsharp.core.6.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
