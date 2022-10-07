@@ -27,3 +27,8 @@ module Utils =
     let eMod (a: int) (b: int) : int = ((a % b) + b) % b
 
     let eMod64 (a: int64) (b: int64) : int64 = ((a % b) + b) % b
+
+    let programToString (program: int list) : string =
+        program
+        |> List.map string
+        |> List.reduce (fun a b -> $"{a},{b}")

@@ -56,12 +56,23 @@ module TestRunner =
     // Day1
     let input1 = getInput 1
 
-    let examples1_1 =
-        [| "12"; "14"; "1969"; "100756" |]
+    let examples1_1 = [| "12"; "14"; "1969"; "100756" |]
 
     let exampleResults1_1 = [| "2"; "2"; "654"; "33583" |]
 
-    let examples1_2 = 
-        [| "14"; "1969"; "100756" |]
+    let examples1_2 = [| "14"; "1969"; "100756" |]
 
     let exampleResults1_2 = [| "2"; "966"; "50346" |]
+
+    // Day2
+    let input2 = getInput 2
+
+    let examples2_1 = [||]
+    //[| "1,0,0,0,99"; "2,3,0,3,99"; "2,4,4,5,99,0"; "1,1,1,4,99,5,6,0,99" |]
+
+    let exampleResults2_1 = [||]
+    //[| "2,0,0,0,99"; "2,3,0,6,99"; "2,4,4,5,99,9801"; "30,1,1,4,2,5,6,0,99" |]
+
+    let examples2_2 = [||]
+
+    let exampleResults2_2 = [||]
