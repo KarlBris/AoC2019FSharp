@@ -76,14 +76,27 @@ module TestRunner =
     let examples2_2 = [||]
 
     let exampleResults2_2 = [||]
-    
+
     // Day3
     let input3 = getInput 3
 
-    let examples3_1 = [| "R75,D30,R83,U83,L12,D49,R71,U7,L72\nU62,R66,U55,R34,D71,R55,D58,R83"; "R98,U47,R26,D63,R33,U87,L62,D20,R33,U53,R51\nU98,R91,D20,R16,D67,R40,U7,R15,U6,R7"|]
+    let examples3_1 =
+        [| "R75,D30,R83,U83,L12,D49,R71,U7,L72\nU62,R66,U55,R34,D71,R55,D58,R83"
+           "R98,U47,R26,D63,R33,U87,L62,D20,R33,U53,R51\nU98,R91,D20,R16,D67,R40,U7,R15,U6,R7" |]
 
-    let exampleResults3_1 = [|"159"; "135"|]
+    let exampleResults3_1 = [| "159"; "135" |]
 
     let examples3_2 = examples3_1
 
-    let exampleResults3_2 = [|"610"; "410"|]
+    let exampleResults3_2 = [| "610"; "410" |]
+
+    // Day4
+    let input4 = getInput 4
+
+    let examples4_1 = [||]
+
+    let exampleResults4_1 = [||]
+
+    let examples4_2 = examples4_1
+
+    let exampleResults4_2 = [||]
