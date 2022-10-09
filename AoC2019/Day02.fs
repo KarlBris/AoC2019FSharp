@@ -13,7 +13,8 @@ module Day02 =
         input
         |> parseProgram
         |> modifyProgram 12 2
-        |> runProgram
+        |> runProgram []
+        |> getProgramFromState
         |> List.head
         |> string
 
@@ -21,7 +22,8 @@ module Day02 =
         let result =
             program
             |> modifyProgram noun verb
-            |> runProgram
+            |> runProgram []
+            |> getProgramFromState
             |> List.head
 
         if result = 19690720 then

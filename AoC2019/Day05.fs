@@ -8,13 +8,15 @@ module Day05 =
     let part1 (input: string) : string =
         input
         |> parseProgram
-        |> runProgram
-        |> ignore
-        ""
+        |> runProgram [ 1 ]
+        |> getOutputsFromState
+        |> List.last
+        |> string
 
     let part2 (input: string) : string =
         input
         |> parseProgram
-        |> runProgram
-        |> ignore
-        ""
+        |> runProgram [ 5 ]
+        |> getOutputsFromState
+        |> List.head
+        |> string
