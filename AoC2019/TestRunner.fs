@@ -100,3 +100,13 @@ module TestRunner =
     let examples4_2 = examples4_1
 
     let exampleResults4_2 = [||]
+
+    // Day5
+    let input5 = getInput 5
+
+    let examples5_1 = [||]
+
+    let exampleResults5_1 = [||]
+
+    let examples5_2 = [||]
+    let exampleResults5_2 = [||]

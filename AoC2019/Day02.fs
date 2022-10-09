@@ -1,30 +1,9 @@
 ﻿namespace AoC2019
 
 open Utils
+open IntcodeComputer
 
 module Day02 =
-    let processInput (inputLine: string) : int list =
-        inputLine
-        |> commas
-        |> Array.map int
-        |> List.ofArray
-
-    let operate (op: int -> int -> int) (pc: int) (program: int list) : int list =
-        let op1 = program[program[pc + 1]]
-        let op2 = program[program[pc + 2]]
-        let pos = program[pc + 3]
-        List.updateAt pos (op op1 op2) program
-
-    let rec executeInstruction (pc: int) (program: int list) : int list =
-        let currentInstruction = program[pc]
-
-        match currentInstruction with
-        | 1 -> executeInstruction (pc + 4) (operate (+) pc program)
-        | 2 -> executeInstruction (pc + 4) (operate (*) pc program)
-        | 99 -> program
-        | i -> failwith $"{i} at position {pc} is not a valid instruction"
-
-    let runProgram (program: int list) : int list = executeInstruction 0 program
 
     let modifyProgram (noun: int) (verb: int) (program: int list) : int list =
         let program' = List.updateAt 1 noun program
@@ -32,7 +11,7 @@ module Day02 =
 
     let part1 (input: string) : string =
         input
-        |> processInput
+        |> parseProgram
         |> modifyProgram 12 2
         |> runProgram
         |> List.head
@@ -51,7 +30,7 @@ module Day02 =
             None
 
     let part2 (input: string) : string =
-        let program = input |> processInput
+        let program = input |> parseProgram
 
         List.allPairs [ 0..99 ] [ 0..99 ]
         |> List.map (part2helper program)
