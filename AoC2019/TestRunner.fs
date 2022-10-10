@@ -110,3 +110,15 @@ module TestRunner =
 
     let examples5_2 = [||]
     let exampleResults5_2 = [||]
+
+    // Day6
+    let input6 = getInput 6
+
+    let examples6_1 = [| "COM)B\nB)C\nC)D\nD)E\nE)F\nB)G\nG)H\nD)I\nE)J\nJ)K\nK)L" |]
+
+    let exampleResults6_1 = [| "42" |]
+
+    let examples6_2 =
+        [| "COM)B\nB)C\nC)D\nD)E\nE)F\nB)G\nG)H\nD)I\nE)J\nJ)K\nK)L\nK)YOU\nI)SAN" |]
+
+    let exampleResults6_2 = [| "4" |]
