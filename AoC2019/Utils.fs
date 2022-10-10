@@ -32,3 +32,11 @@ module Utils =
         program
         |> List.map string
         |> List.reduce (fun a b -> $"{a},{b}")
+
+    // From http://www.fssnip.net/4u/title/Very-Fast-Permutations
+    let rec permutations = function
+    | []      -> seq [List.empty]
+    | x :: xs -> Seq.collect (insertions x) (permutations xs)
+    and insertions x = function
+        | []             -> [[x]]
+        | (y :: ys) as xs -> (x::xs)::(List.map (fun x -> y::x) (insertions x ys))
